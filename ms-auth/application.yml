@@ -6,8 +6,8 @@ spring:
     name: ms-auth
   datasource:
     url: jdbc:mysql://localhost:3312/auth_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
-    password: root
+    username: user1
+    password: pass1
     driver-class-name: com.mysql.cj.jdbc.Driver
   sql:
     init:
