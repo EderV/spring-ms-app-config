@@ -1,0 +1,1 @@
+Configurations repository for spring-microservices-app 
