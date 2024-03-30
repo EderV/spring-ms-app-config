@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: ms-gateway
+    name: ms-auth
   datasource:
     url: jdbc:mysql://localhost:3312/auth_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
