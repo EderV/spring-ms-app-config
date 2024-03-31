@@ -10,6 +10,10 @@ spring:
         locator:
           enabled: true
       routes:
+        - id: ms-auth
+          uri: 'http://localhost:8081'
+          predicates:
+            - Path=/api/auth/**
         - id: students
           uri: 'http://localhost:8090'
           predicates:
