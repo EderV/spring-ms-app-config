@@ -1,1 +1,22 @@
-random-value: "AaAA"
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3312/auth_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: never
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: false
+
+logging:
+  level:
+    org:
+      hibernate.sql: DEBUG
+      springframework:
+        security: DEBUG
+
+access-token:
+  duration_minutes: 240

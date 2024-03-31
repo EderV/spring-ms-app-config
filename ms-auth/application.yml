@@ -4,17 +4,6 @@ server:
 spring:
   application:
     name: ms-auth
-  datasource:
-    url: jdbc:mysql://localhost:3312/auth_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: root
-    password: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  sql:
-    init:
-      mode: never
-  jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
-    generate-ddl: false
 
 eureka:
   instance:
@@ -23,18 +12,11 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
 
-logging:
-  level:
-    org:
-      hibernate.sql: DEBUG
-      springframework:
-        security: DEBUG
 
 access-refresh-token-path: "access-refresh-token-keys"
 
 access-token:
   private: "access-refresh-token-keys/access-token-private.key"
   public: "access-refresh-token-keys/access-token-public.key"
-  duration_minutes: 240
 
 private_endpoints: /api/user/**, /api/admin/**
