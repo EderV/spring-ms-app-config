@@ -37,4 +37,4 @@ access-token:
   public: "access-refresh-token-keys/access-token-public.key"
   duration_minutes: 240
 
-  private_endpoints: /api/user/**, /api/admin/**
+private_endpoints: /api/user/**, /api/admin/**
