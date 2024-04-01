@@ -14,14 +14,12 @@ spring:
           uri: 'http://localhost:8081'
           predicates:
             - Path=/api/auth/**
-        - id: students
-          uri: 'http://localhost:8090'
-          predicates:
-            - Path=/api/student/**
-        - id: courses
+        - id: ms-example
           uri: 'http://localhost:9090'
           predicates:
-            - Path=/api/course/**
+            - Path=/example/test/**
+          filter:
+            - AuthFilter
 
 eureka:
   instance:
