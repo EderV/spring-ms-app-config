@@ -18,7 +18,7 @@ spring:
           uri: 'http://localhost:9090'
           predicates:
             - Path=/example/test/**
-          filter:
+          filters:
             - AuthFilter
 
 eureka:
