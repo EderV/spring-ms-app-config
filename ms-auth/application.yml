@@ -19,4 +19,4 @@ access-token:
   private: "access-refresh-token-keys/access-token-private.key"
   public: "access-refresh-token-keys/access-token-public.key"
 
-private_endpoints: /api/auth/val/**
+private_endpoints: /api/auth/val/** /ms/user/event/**

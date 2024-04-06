@@ -20,6 +20,12 @@ spring:
             - Path=/example/test/**
           filters:
             - AuthFilter
+        - id: ms-userevent
+          uri: 'http://localhost:8090'
+          predicates:
+            - Path=/ms/user/event/**
+          filters:
+            - AuthFilter
 
 eureka:
   instance:
