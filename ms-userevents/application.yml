@@ -6,11 +6,8 @@ spring:
     name: ms-userevents
   data:
     mongodb:
-      host: localhost
-      port: 27017
+      uri: mongodb://admin:password@localhost:27017/
       database: user-events-db
-      username: admin
-      password: password
 
 eureka:
   instance:
