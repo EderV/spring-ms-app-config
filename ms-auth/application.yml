@@ -13,10 +13,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 
-access-refresh-token-path: "access-refresh-token-keys"
+access-refresh-token-path: "ms-auth/access-refresh-token-keys"
 
 access-token:
-  private: "access-refresh-token-keys/access-token-private.key"
-  public: "access-refresh-token-keys/access-token-public.key"
+  private: "ms-auth/access-refresh-token-keys/access-token-private.key"
+  public: "ms-auth/access-refresh-token-keys/access-token-public.key"
 
 private_endpoints: /api/auth/val/**, /ms/user/event/**
