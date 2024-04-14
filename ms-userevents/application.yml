@@ -11,7 +11,7 @@ spring:
     kafka:
       bootstrap-servers: "localhost:9092"
       consumer:
-        group-id: "spring-user-events-group"
+        group-id: "user-events-group"
 
 eureka:
   instance:
