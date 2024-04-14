@@ -1,1 +1,1 @@
-TEST_VAR=some data to read
+TEST_VAR: some data to read
