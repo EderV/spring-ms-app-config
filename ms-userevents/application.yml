@@ -10,6 +10,8 @@ spring:
       database: user-events-db
     kafka:
       bootstrap-servers: "localhost:9092"
+      consumer:
+        group-id: "spring-user-events-group"
 
 eureka:
   instance:
