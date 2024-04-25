@@ -8,10 +8,10 @@ spring:
     mongodb:
       uri: mongodb://admin:password@localhost:27017/
       database: user-events-db
-    kafka:
-      bootstrap-servers: "localhost:9092"
-      consumer:
-        group-id: "user-events-group"
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    consumer:
+      group-id: "user-events-group"
 
 eureka:
   instance:
