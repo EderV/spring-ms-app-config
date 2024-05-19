@@ -20,6 +20,12 @@ spring:
             - Path=/ms/user/event/**
           filters:
             - AuthFilter
+        - id: ms-scheduler
+          uri: 'http://localhost:8092'
+          predicates:
+            - Path=/ms/scheduler/**
+          filters:
+            - AuthFilter
 
 eureka:
   instance:
