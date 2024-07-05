@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3314/notification-config-db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: spring_ms_notifier
+    password: 'BVsHq#DP2q#$cJqA%@yxF'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: never
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: false
+
+logging:
+  level:
+    org:
+      hibernate.sql: DEBUG
+      springframework:
+        security: DEBUG
