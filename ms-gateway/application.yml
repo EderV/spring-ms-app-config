@@ -26,6 +26,12 @@ spring:
             - Path=/ms/scheduler/**
           filters:
             - AuthFilter
+        - id: ms-notifier
+          uri: 'http://localhost:8094'
+          predicates:
+            - Path=/ms/notifier/**
+          filters:
+            - AuthFilter
 
 eureka:
   instance:
